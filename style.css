@@ -1,0 +1,88 @@
+body{
+    font-size: 14px;
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'HiraginoSans-W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+article{
+    display: flex;
+}
+div.side{
+    width: 300px;
+    height: 100%;
+    background-color: #eeeeee;
+}
+div.keyworRanking, div.categoryRanking{
+    padding: 10px 20px;
+}
+div.categoryRanking{
+    width: 400px;
+}
+header{
+    color: azure;
+    background-color: #404849;
+    border-radius: 3px;
+}
+.content{
+    width: 1000px;
+    display: flex;
+    margin: 20px 200px;
+}
+h1{  
+    font-size: 18px;
+    padding: 5px;
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 3px;
+}
+p.data{
+    margin: 10px 5px;
+}
+div.keyworRanking > p, div.categoryRanking > p{
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    color: azure;
+    background-color: #404849;
+}
+table{
+    border-collapse: collapse;
+    border: solid 1px #333;
+    background-color: #eeeeee;
+}
+th, td{
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+body > main > div.keyworRanking > table > tr:nth-child(3) > td.rank > img{
+    text-align: right;
+}
+span{
+    font-size: 40px;
+}
+@media screen and (max-width: 1275px) {
+    article{
+        display: block;
+    }
+}
+@media screen and (max-width: 1100px) {
+    /* body{
+        width: 300px;
+    } */
+    article{
+        display: block;
+    }
+    .content{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.side{
+        width: 100%;
+    }
+    div.keyworRanking, div.categoryRanking{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+}
